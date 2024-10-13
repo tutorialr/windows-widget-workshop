@@ -1,0 +1,130 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.6",
+  "body": [
+    {
+      "type": "Image",
+      "size": "Large",
+      "horizontalAlignment": "Center",
+      "url": "data:image/svg+xml;base64,${ImageData}"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Countdown}",
+      "horizontalAlignment": "Center",
+      "style": "heading"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "spacing": "ExtraLarge",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${DaysTens}"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${DaysUnits}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "Days",
+              "horizontalAlignment": "Center",
+              "weight": "Bolder"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "spacing": "ExtraLarge",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${HoursTens}"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${HoursUnits}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "Hours",
+              "horizontalAlignment": "Center",
+              "weight": "Bolder"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "spacing": "ExtraLarge",
+          "items": [
+            {
+              "type": "ColumnSet",
+              "columns": [
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${MinutesTens}"
+                    }
+                  ]
+                },
+                {
+                  "type": "Column",
+                  "items": [
+                    {
+                      "type": "Image",
+                      "url": "data:image/svg+xml;base64,${MinutesUnits}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "Minutes",
+              "horizontalAlignment": "Center",
+              "weight": "Bolder"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
