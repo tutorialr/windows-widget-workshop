@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Countdown.Widget (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Countdown.Widget (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

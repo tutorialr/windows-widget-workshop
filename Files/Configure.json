@@ -1,0 +1,106 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.6",
+  "body": [
+    {
+      "type": "Input.ChoiceSet",
+      "id": "TimerType",
+      "value": "${TimerType}",
+      "choices": [
+        {
+          "title": "Party 🎉",
+          "value": "PartyPopper"
+        },
+        {
+          "title": "Celebration 🎀",
+          "value": "Ribbon"
+        },
+        {
+          "title": "Birthday 🎂",
+          "value": "BirthdayCake"
+        },
+        {
+          "title": "Holiday ✈️",
+          "value": "Airplane"
+        },
+        {
+          "title": "Graduation 🎓",
+          "value": "GraduationCap"
+        },
+        {
+          "title": "Concert 🎤",
+          "value": "Microphone"
+        },
+        {
+          "title": "Event 🎟️",
+          "value": "AdmissionTickets"
+        },
+        {
+          "title": "General ⏲️",
+          "value": "TimerClock"
+        }
+      ]
+    },
+    {
+      "id": "Countdown",
+      "type": "Input.Text",
+      "placeholder": "Countdown Name",
+      "value": "${Countdown}"
+    },
+    {
+      "type": "Input.Date",
+      "id": "TimerDate",
+      "title": "Event Date",
+      "value": "${TimerDate}"
+    },
+    {
+      "type": "Input.Time",
+      "id": "TimerTime",
+      "title": "Event Time",
+      "value": "${TimerTime}"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "DisplayType",
+      "value": "${DisplayType}",
+      "style": "compact",
+      "choices": [
+        {
+          "title": "Segment",
+          "value": "Segment"
+        },
+        {
+          "title": "Matrix",
+          "value": "Matrix"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": "Save",
+          "verb": "save"
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Reset",
+          "verb": "reset"
+        },
+        {
+          "type": "Action.Execute",
+          "title": "Close",
+          "verb": "close"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Error}",
+      "color": "Attention",
+      "horizontalAlignment": "Center"
+    }
+  ]
+}
